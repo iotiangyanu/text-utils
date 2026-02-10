@@ -47,7 +47,6 @@ text-utils/
 └── README.md
 
 
----
 
 ## ⚙️ How to Run the Project Locally
 
