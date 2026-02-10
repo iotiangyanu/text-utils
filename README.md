@@ -61,7 +61,7 @@ text-utils/
 
 └── README.md
 
-
+---
 
 ## ⚙️ How to Run the Project Locally
 
@@ -69,16 +69,17 @@ text-utils/
    ```bash
    git clone https://github.com/iotiangyanu/text-utils.git
 
-cd text-utils
-
-python -m venv venv
-venv\Scripts\activate
-
-pip install django
-
-python manage.py runserver
-
-http://127.0.0.1:8000/
+   cd text-utils
+   
+   python -m venv venv
+   venv\Scripts\activate
+   
+   pip install django
+   
+   python manage.py runserver
+   
+   http://127.0.0.1:8000/
+bash```
 
 🌐 Application Routes
 / or /index → Home page for text input
