@@ -79,7 +79,7 @@ text-utils/
    python manage.py runserver
    
    http://127.0.0.1:8000/
-bash```
+
 
 🌐 Application Routes
 / or /index → Home page for text input
