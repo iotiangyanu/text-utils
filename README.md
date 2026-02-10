@@ -28,22 +28,37 @@ Text Utils is a Django-based web application designed to perform basic text anal
 
 text-utils/
 │── manage.py
+
 │
 ├── textutils/
+
 │ ├── init.py
+
 │ ├── settings.py
+
 │ ├── urls.py
+
 │ ├── views.py
+
 │ ├── asgi.py
+
 │ └── wsgi.py
+
 │
+
 ├── templates/
+
 │ ├── index.html
+
 │ ├── about.html
+
 │ ├── uppercase.html
+
 │ └── countchar.html
+
 │
 ├── .gitignore
+
 └── README.md
 
 
