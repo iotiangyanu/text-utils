@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Text Utils – About</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body class="p-0 m-0 border-0">
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #0e5e81;">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white fw-bold" href="/index/">Text Utils</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="/index">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white fw-semibold" href="/about">About</a>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search tools"
+              aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="about-section">
+      <style>
+        .about-section {
+          padding: 70px 10%;
+          background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+          color: #f5f7fa;
+          font-family: "Poppins", sans-serif;
+          animation: fadeIn 1.2s ease-in-out;
+        }
+
+        .about-section h2 {
+          font-size: 2.7rem;
+          color: #00e6e6;
+          text-align: center;
+          margin-bottom: 25px;
+          letter-spacing: 1px;
+          animation: slideDown 1s ease;
+        }
+
+        .about-section h3 {
+          font-size: 1.9rem;
+          color: #ffd369;
+          margin-top: 40px;
+          margin-bottom: 15px;
+        }
+
+        .about-section p {
+          font-size: 1.08rem;
+          line-height: 1.9;
+          color: #e6e6e6;
+          margin-bottom: 18px;
+        }
+
+        .about-section strong {
+          color: #00ffcc;
+        }
+
+        .about-section ul {
+          margin: 25px 0;
+          padding-left: 25px;
+        }
+
+        .about-section ul li {
+          font-size: 1.02rem;
+          margin-bottom: 12px;
+          color: #f1f1f1;
+          animation: fadeUp 0.8s ease forwards;
+        }
+
+        .about-section ul li::marker {
+          color: #00e6e6;
+        }
+
+        .about-section pre {
+          background: #111827;
+          color: #00ffcc;
+          padding: 16px;
+          border-radius: 8px;
+          font-size: 1rem;
+          overflow-x: auto;
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+          animation: glow 2s infinite alternate;
+        }
+
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+
+        @keyframes slideDown {
+          from { opacity: 0; transform: translateY(-30px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeUp {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes glow {
+          from { box-shadow: 0 0 10px rgba(0, 255, 204, 0.4); }
+          to { box-shadow: 0 0 25px rgba(0, 255, 204, 0.9); }
+        }
+      </style>
+
+      <h2>About Text Utils</h2>
+
+      <p>
+        <strong>Text Utils</strong> is a smart and easy-to-use text analysis tool that helps
+        users transform and examine text efficiently. It is designed for students,
+        developers, content writers, and professionals who work with text regularly.
+      </p>
+
+      <p>
+        With Text Utils, you can enter any text and instantly perform the following operations:
+      </p>
+
+      <ul>
+        <li>Convert the entire text into <strong>UPPERCASE</strong></li>
+        <li>Calculate the total number of characters</li>
+        <li>Count only alphabetical characters</li>
+        <li>Detect and count special characters</li>
+        <li>Exclude unnecessary or unwanted character pieces</li>
+      </ul>
+
+      <p>
+        The goal of Text Utils is to deliver fast, accurate results with a clean and
+        visually appealing user experience.
+      </p>
+
+      <h3>Example</h3>
+
+      <p><strong>Input Text:</strong></p>
+      <pre>
+Hello World! @2026
+      </pre>
+
+      <p><strong>Output:</strong></p>
+      <ul>
+        <li>Converted Text: <strong>HELLO WORLD! @2026</strong></li>
+        <li>Total Characters: 18</li>
+        <li>Alphabetical Characters: 10</li>
+        <li>Special Characters: 3</li>
+      </ul>
+
+      <p>
+        This is just the beginning. More advanced features such as word count,
+        text cleaning, formatting tools, and deeper analysis will be introduced
+        in future updates.
+      </p>
+    </section>
+    <!-- About Section End -->
+
+  </body>
+</html>
