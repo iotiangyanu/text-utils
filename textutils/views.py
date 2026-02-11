@@ -16,7 +16,7 @@ def uppercase(request):
 
 def charcount(request):
     text=request.GET.get('text','default')
-    char='''`1234567890-=qwertyuiop[\]asdfghjkl;zxcvbnm,./~!@#$%^&*()_+}{|:"<>?QWERTYUIOPASDFGHJKLZXCVBNM '''
+    char='''`1234567890-=qwertyuiop[\]asdfghjkl;zxcvbnm,./~!@#$%^&*()_+}{|:"<>?QWERTYUIOPASDFGHJKLZXCVBNM'''
     char=set(char)
     data={
         'count':0
@@ -31,7 +31,7 @@ def about(request):
 
 def removepucn(request):
     string=request.GET.get('text', 'default')
-    s='qwertyuiopasdfghjklzxcvbnm1234567890QWERTYUIOPASDFGHJKLZXCVBNM'
+    s='qwertyuiopasdfghjklzxcvbnm1234567890QWERTYUIOPASDFGHJKLZXCVBNM '
     s=set(s)
     new_string=''
     for i in string:
