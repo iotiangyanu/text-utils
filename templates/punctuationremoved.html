@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <title>Text Utils – Smart Text Analyzer</title>
+    <title>Text Utils – Uppercase Result</title>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </head>
 
@@ -25,10 +25,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="/index">Home</a>
+              <a class="nav-link active text-white" aria-current="page" href="index">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="/about">About</a>
+              <a class="nav-link text-white" href="about">About</a>
             </li>
           </ul>
 
@@ -42,41 +42,39 @@
     </nav>
     <!-- Navbar End -->
 
-    <!-- Main Content Start -->
+    <!-- Result Section Start -->
     <div class="container mt-5">
-      <h2 class="text-center mb-3 fw-bold">Analyze Your Text Instantly</h2>
-      <p class="text-center text-muted mb-4">
-        Enter your text below and use our tools to transform and analyze it with ease.
-      </p>
+      <div class="card shadow-lg border-0">
+        <div class="card-body text-center p-5">
 
-      <form action="N/A" method="get">
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label fw-semibold">
-            Enter your text for analysis
-          </label>
-          <textarea
-            name="text"
-            class="form-control"
-            id="exampleFormControlTextarea1"
-            rows="5"
-            placeholder="Type or paste your text here..."
-          ></textarea>
-        </div>
+          <h1 class="fw-bold text-primary mb-3">
+            Uppercase Conversion Result
+          </h1>
 
-        <div class="d-flex gap-2">
-          <button type="submit" class="btn btn-primary" formaction="/uppercase" formmethod="GET">
-            Convert to Uppercase
-          </button>
-          <button type="submit" class="btn btn-success" formaction="/countchar" formmethod="GET">
-            Count Characters
-          </button>
-          <button type="submit" class="btn btn-success" formaction="/punctuationremoved" formmethod="GET">
-            Remove punctuation
-          </button>
+          <p class="fs-5 text-muted mb-4">
+            Punctuation has been removed from your text successfully 
+          </p>
+
+          <div class="bg-light p-4 rounded mb-4">
+            <h3 class="fw-semibold text-dark" style="word-wrap: break-word;">
+              {{text}}
+            </h3>
+          </div>
+
+          <form action="N/A" method="get">
+            <button
+              type="submit"
+              class="btn btn-primary px-4 py-2"
+              formaction="/index"
+              formmethod="GET">
+              Go Back & Edit Text
+            </button>
+          </form>
+
         </div>
-      </form>
+      </div>
     </div>
-    <!-- Main Content End -->
+    <!-- Result Section End -->
 
   </body>
 </html>

@@ -25,5 +25,6 @@ urlpatterns = [
     path('countchar/',views.charcount, name='charcount'),
     path('about/', views.about, name='about'),
     path('index/',views.index, name='index'),
+    path('punctuationremoved',views.removepucn, name='removepucn'),
     
 ]

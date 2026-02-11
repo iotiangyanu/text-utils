@@ -28,3 +28,16 @@ def charcount(request):
 
 def about(request):
     return render(request, 'about.html')
+
+def removepucn(request):
+    string=request.GET.get('text', 'default')
+    s='qwertyuiopasdfghjklzxcvbnm1234567890QWERTYUIOPASDFGHJKLZXCVBNM'
+    s=set(s)
+    new_string=''
+    for i in string:
+        if i in s:
+            new_string+=i
+    data={
+        'text':new_string
+    }
+    return render(request, 'index.html', data)
