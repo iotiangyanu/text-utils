@@ -40,4 +40,4 @@ def removepucn(request):
     data={
         'text':new_string
     }
-    return render(request, 'puntuationremoved.html', data)
+    return render(request, 'punctuationremoved.html', data)
