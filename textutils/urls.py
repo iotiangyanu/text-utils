@@ -27,5 +27,6 @@ urlpatterns = [
     path('index/',views.index, name='index'),
     path('punctuationremoved/', views.removepucn, name='removepucn'),
     path('countvowel',views.countvowel, name='vowel'),
+    path('wordcount',views.wordcount, name='wordcount'),
     
 ]
