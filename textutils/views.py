@@ -16,7 +16,7 @@ def uppercase(request):
 
 def charcount(request):
     text=request.GET.get('text','default')
-    char='''`1234567890-=qwertyuiop[\]asdfghjkl;zxcvbnm,./~!@#$%^&*()_+}{|:"<>?QWERTYUIOPASDFGHJKLZXCVBNM'''
+    char='''`1234567890-=qwertyuiop[\]asdfghjkl;zxcvbnm,./~!@#$%^&*()_+}{|:"<>?QWERTYUIOPASDFGHJKLZXCVBNM '''
     char=set(char)
     data={
         'count':0
