@@ -43,15 +43,14 @@ def removepucn(request):
     return render(request, 'punctuationremoved.html', data)
 
 def countvowel(request):
-    string=request.GET.get(request, 'text')
+    string=request.GET.get('text', '')
     vowel='aeiouAEIOU'
     vowel=set(vowel)
-    count=0
+    data={
+        'vowel_count':0
+    }
     for i in string:
         if i in vowel:
-            count+=1
-    data={
-        'vowel_count':count
-    }
+            data['vowel_count']+=1
     return render(request, 'countvowel.html',data)
 
