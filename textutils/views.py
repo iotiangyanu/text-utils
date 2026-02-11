@@ -41,3 +41,17 @@ def removepucn(request):
         'text':new_string
     }
     return render(request, 'punctuationremoved.html', data)
+
+def countvowel(request):
+    string=request.GET.get(request, 'text')
+    vowel='aeiouAEIOU'
+    vowel=set(vowel)
+    count=0
+    for i in string:
+        if i in vowel:
+            count+=1
+    data={
+        'vowel_count':count
+    }
+    return render(request, 'countvowel.html',data)
+
