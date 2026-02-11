@@ -7,7 +7,7 @@ def index(request):
     return render(request, 'index.html')
  
 def uppercase(request):
-    text=request.GET.get('text','default')
+    text=request.POST.get('text','default')
     upperchar=text.upper()
     data={
         'upper_case':upperchar
@@ -15,7 +15,7 @@ def uppercase(request):
     return render(request, 'uppercase.html', data)
 
 def charcount(request):
-    text=request.GET.get('text','default')
+    text=request.POST.get('text','default')
     char='''`1234567890-=qwertyuiop[\]asdfghjkl;zxcvbnm,./~!@#$%^&*()_+}{|:"<>?QWERTYUIOPASDFGHJKLZXCVBNM'''
     char=set(char)
     data={
@@ -30,7 +30,7 @@ def about(request):
     return render(request, 'about.html')
 
 def removepucn(request):
-    string=request.GET.get('text', 'default')
+    string=request.POST.get('text', 'default')
     s='qwertyuiopasdfghjklzxcvbnm1234567890QWERTYUIOPASDFGHJKLZXCVBNM \n'
     s=set(s)
     new_string=''
@@ -43,7 +43,7 @@ def removepucn(request):
     return render(request, 'punctuationremoved.html', data)
 
 def countvowel(request):
-    string=request.GET.get('text', '')
+    string=request.POST.get('text', '')
     vowel='aeiouAEIOU'
     vowel=set(vowel)
     data={
@@ -55,7 +55,7 @@ def countvowel(request):
     return render(request, 'countvowel.html',data)
 
 def wordcount(request):
-    string=request.GET.get('text', '0')
+    string=request.POST.get('text', '0')
     string=string.split()
     data={
         'count':len(string)

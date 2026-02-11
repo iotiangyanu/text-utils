@@ -49,7 +49,7 @@
         Enter your text below and use our tools to transform and analyze it with ease.
       </p>
 
-      <form action="N/A" method="get">
+      <form action="N/A" method="post"> {% csrf_token %}
         <div class="mb-3">
           <label for="exampleFormControlTextarea1" class="form-label fw-semibold">
             Enter your text for analysis
@@ -64,19 +64,19 @@
         </div>
 
         <div class="d-flex gap-2">
-          <button type="submit" class="btn btn-success" formaction="/uppercase" formmethod="GET">
+          <button type="submit" class="btn btn-success" formaction="/uppercase/" formmethod="POST">
             Convert to Uppercase
           </button>
-          <button type="submit" class="btn btn-success" formaction="/countchar" formmethod="GET">
+          <button type="submit" class="btn btn-success" formaction="/countchar/" formmethod="POST">
             Count Characters
           </button>
-          <button type="submit" class="btn btn-success" formaction="/punctuationremoved" formmethod="GET">
+          <button type="submit" class="btn btn-success" formaction="/punctuationremoved/" formmethod="POST">
             Remove punctuation
           </button>
-          <button type="submit" class="btn btn-success" formaction="/countvowel" formmethod="GET">
+          <button type="submit" class="btn btn-success" formaction="/countvowel" formmethod="POST">
             Count vowel
           </button>
-          <button type="submit" class="btn btn-success" formaction="/wordcount" formmethod="GET">
+          <button type="submit" class="btn btn-success" formaction="/wordcount" formmethod="POST">
             Word count
           </button>
         </div>
