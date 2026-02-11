@@ -31,7 +31,7 @@ def about(request):
 
 def removepucn(request):
     string=request.GET.get('text', 'default')
-    s='qwertyuiopasdfghjklzxcvbnm1234567890QWERTYUIOPASDFGHJKLZXCVBNM '
+    s='qwertyuiopasdfghjklzxcvbnm1234567890QWERTYUIOPASDFGHJKLZXCVBNM \n'
     s=set(s)
     new_string=''
     for i in string:
@@ -54,3 +54,10 @@ def countvowel(request):
             data['vowel_count']+=1
     return render(request, 'countvowel.html',data)
 
+def wordcount(request):
+    string=request.GET.get('text', '0')
+    string=string.split()
+    data={
+        'count':len(string)
+    }
+    return render(request, 'wordcount.html', data)
